@@ -1,0 +1,81 @@
+.section-brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: 1s all ease;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 150px;
+    margin: 2em;
+    filter: grayscale(0.9);
+
+    &:hover {
+      filter: none;
+    }
+    @media only screen and (max-width: 992px) {
+      width: 100px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100px;
+    }
+  }
+}
+
+.colored-bg {
+  //background-color: #F3F7FA;
+  background-color: #fbfbfb;
+}
+.product-border {
+  border: 10px solid white;
+}
+
+.product-items-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 400px;
+  p {
+    font-size: 16px;
+  }
+}
+
+.product-bullets {
+  list-style: none;
+  padding: 1.1em;
+  li {
+    padding: 0.5em;
+    list-style-image: url(../img/svg-ico/check-outer.svg);
+
+    /*&:before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+        background-image: url(../img/svg-ico/check-outer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right:0.5em;   
+        margin-bottom: -5px;
+      }*/
+    p,
+    h5 {
+      font-size: 16px;
+      display: inline;
+      color: #444444;
+    }
+  }
+}
+.product-image {
+  padding-top: 2em;
+}
+
+.cardComponent {
+  background-color: white;
+  min-height: 150px;
+}

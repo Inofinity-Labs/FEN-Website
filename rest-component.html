@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstEnergy</title>
+    <link rel="shortcut icon" href="assets/img/ficon.png" type="image/x-icon">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.6.0-dist/css/bootstrap.min.css"> 
+    <!-- Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS Animation-->
+    <link href="assets/css/animate/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- ***************************************************************************************************** 
+                      Spinner 
+  ******************************************************************************************************** -->
+  <div class='spinner-wrapper loading'>
+      <div class="spinner"></div>
+      <div class="spinner-logo">
+          
+      </div>
+  </div>
+  <!-- ***************************************************************************************************** 
+                      Navbar 
+******************************************************************************************************** -->
+  <nav class="navbar navbar-expand-xl">
+    <a href="index.html" class="navbar-brand"><img src="assets/img/fe1.png"></a>
+    <div id="navbarContent" class="collapse navbar-collapse order-sm-12 order-lg-1">
+    <ul class="navbar-nav ml-auto">
+        <!-- Megamenu-->
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item dropdown megamenu" id="solution"><a id="megamenu" href="turnkey-solar.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Solutions</a>
+            <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="solution-dropdown">
+            <ul class="sub-nav navbar-nav ml-auto sub-menu-solution">
+                <li class="sub-menu"><a href="turnkey-solar.html" class="sub-link"><h6 class="text-white">Turn-key Solar Projects <br>Engineering Procurement & Construction (EPC)   </h6></a></li>
+                <li class="sub-menu"><a href="solar-roof.html" class="sub-link "><h6 class="">Solar Roof Rentals  </h6></a></li>
+                <li class="sub-menu"><a href="concept-project.html" class="sub-link"><h6 class="">Operation & Maintenance </h6></a></li>
+                <li class="sub-menu"><a href="permit-approval.html" class="sub-link"><h6 class="">Concept Development & Project Promotion | සූර්ය ශක්ති </h6></a></li>
+                <li class="sub-menu"><a href="consulting-design.html" class="sub-link"><h6 class="">Lands, Licenses, Permits & Environmental Approvals</h6></a></li>
+                <li class="sub-menu"><a href="operation-maintainance.html" class="sub-link"><h6 class="">Design, Consultancy & Project Management</h6></a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown megamenu" id="product"><a id="megamenu" href="/solar-module.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle  nav-active">Product and Partners</a>
+            <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="project-dropdown">
+              <ul class="sub-nav navbar-nav ml-auto">
+                <li class="sub-menu"><a href="solar-module.html" class="sub-link "><h6 class="">Solar Module</h6></a></li>
+                <li class="sub-menu"><a href="inverters.html" class="sub-link"><h6 class="">Inverters</h6></a></li>
+                <li class="sub-menu"><a href="mounting-system.html" class="sub-link"><h6 class="">Mounting Systems</h6></a></li>
+                <li class="sub-menu"><a href="rest-component.html" class="sub-link sub-active"><h6 class="">Other Components</h6></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown megamenu" id="project"><a id="megamenu" href="/projects.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Projects </a>
+            <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="projects-dropdown">
+              <ul class="sub-nav navbar-nav ml-auto">
+                
+                <li class="sub-menu"><a href="project-rooftop.html" class="sub-link"><h6 class="">Rooftop</h6></a></li>
+                <li class="sub-menu"><a href="project-roofrental.html" class="sub-link"><h6 class="">Roof Rentals</h6></a></li>
+                <li class="sub-menu"><a href="project-ground-m.html" class="sub-link"><h6 class="">Ground Mounted</h6></a></li>
+                <li class="sub-menu"><a href="project-design.html" class="sub-link"><h6 class="">Design, Consulting and Project Management</h6></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <!-- <li class="nav-item dropdown megamenu"><a id="megamenu" href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">About Us </a>
+            <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0" id="project-dropdown">
+              <ul class="sub-nav navbar-nav ml-auto">
+                <li class="sub-menu"><a href="#begin" class="sub-link"><h6>Humble Beginings</h6></a></li>
+                <li class="sub-menu"><a href="#vision" class="sub-link"><h6>Vision & Mission</h6></a></li>
+                <li class="sub-menu"><a href="#flagship" class="sub-link"><h6>Flagship Companies</h6></a></li>
+                <li class="sub-menu"><a href="#leadership" class="sub-link"><h6>Leadership</h6></a></li>
+                <li class="sub-menu"><a href="#teamlead" class="sub-link"><h6>Team Leads</h6></a></li>
+                
+              </ul>
+            </div>
+          </li> -->
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+    </div>  
+    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler order-md-1">
+    <span></span>
+    </button>
+</nav>
+<!-- ***************************************************************************************************** 
+                      Content 
+******************************************************************************************************** -->
+                      
+    
+  <section class="hero-section" >
+    <div class="solution-image">
+    </div>
+    <div class="hero-heading">
+      <div class="container">
+        <h1 data-aos="fade-up" data-aos-duration="800">Rest of <span class="fen-yello">Components</span> </h1>
+      </div>
+    </div>
+  </section> 
+
+  <section class="my-5">
+    <div class="container">
+
+      <div class="row" >
+      
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent border border-dark p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/leoni.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Switzer</h4>
+                <p style="text-align: left;">Land Leoni Solar Cables</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent border border-dark p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/fibox.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Finland</h4>
+                <p style="text-align: left;">DC Enclosure Boxes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent border border-dark p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/hensel.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Germany</h4>
+                <p style="text-align: left;">DC Enclosure Boxes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end row -->
+      <div class="row" >
+      
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/imo.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>UK</h4>
+                <p style="text-align: left;">DC Disconnector Switches</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/schneider.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>France</h4>
+                <p style="text-align: left;">AC Switchgear</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/citel.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>France</h4>
+                <p style="text-align: left;">Surge Protection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end row -->
+      <div class="row" >
+      
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/staubli.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Switzerland</h4>
+                <p style="text-align: left;">DC Connectors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/hellermanntyton.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>UK</h4>
+                <p style="text-align: left;">Cable Ties</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/marconite.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>UK</h4>
+                <p style="text-align: left;">Earth Enhancement Materials</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end row -->
+      <div class="row" >
+      
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/axis.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>India</h4>
+                <p style="text-align: left;">Air & Earth Termination systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/bizlink.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>USA</h4>
+                <p style="text-align: left;">DC Connectors , Y Connectors and Fuse Connectors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/wasi.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Germany</h4>
+                <p style="text-align: left;">EPDM Sheets , Screws, Nut & Bolts, Fasteners, Clamps, EPDM sheets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end row -->
+
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="card cardComponent shadow p-3 my-2">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-center">
+                <img src="assets/img/products/component/morex.jpg" alt="" width="100%">
+              </div>
+              <div class="col-7 pt-3">
+                <h4>Estonia</h4>
+                <p style="text-align: left;">High Quality Lugs & Terminals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- <section class="mt-5">
+    <div class="container padding-error">
+      <div class="">
+
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/leoni.jpg" class="card-img-top card-img-top-product " alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">Switzer</h5>
+                          <p class="card-text">land Leoni Solar Cables</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/fibox.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">Finland</h5>
+                          <p class="card-text">DC  Enclosure Boxes</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/hensel.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">Germany</h5>
+                          <p class="card-text">DC  Enclosure Boxes</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/wasi.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">Germany</h5>
+                          <p class="card-text">EPDM Sheets , Screws, Nut & Bolts, Fasteners, Clamps, EPDM sheets</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="row" data-aos="fade-up" data-aos-duration="800">
+              <div class="col-md-3">
+                  <div class="card shadow-product" >
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/imo.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">UK</h5>
+                          <p class="card-text">DC Disconnector Switches</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/schneider.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">France</h5>
+                          <p class="card-text">AC Switchgear</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/citel.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">France</h5>
+                          <p class="card-text">Surge Protection</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/bizlink.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">USA</h5>
+                          <p class="card-text"> DC  Connectors , Y Connectors and Fuse Connectors</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-duration="800">
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/staubli.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">Switzerland</h5>
+                          <p class="card-text"> DC  Connectors</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/hellermanntyton.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">UK</h5>
+                          <p class="card-text"> Cable Ties</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/marconite.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">UK</h5>
+                          <p class="card-text">Earth Enhancement Materials</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card shadow-product">
+                      <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <img src="assets/img/products/component/axis.jpg" class="card-img-top card-img-top-product" alt="">
+                      </div>
+                      <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                          <h5 class="card-title">India</h5>
+                          <p class="card-text">Air & Earth Termination  systems</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+              <div class="row" data-aos="fade-up" data-aos-duration="800">
+                  <div class="col-md-3">
+                      <div class="card shadow-product">
+                          <div class="card-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                              <img src="assets/img/products/component/morex.jpg" class="card-img-top card-img-top-product" alt="">
+                          </div>
+                          <div class="card-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                              <h5 class="card-title">Estonia</h5>
+                              <p class="card-text">High Quality Lugs  &  Terminals</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+      </div>
+  </div>
+  </section> -->
+
+  <!-- <section class="mt-5">
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header bg-dark py-4 rounded-0">
+            <h4 class="text-white m-0">Switzer <br>  <span class="fen-gray">land Leoni Solar Cables</span></h4>
+          </div>
+          <div class="card-body p-0">
+            <img src="assets/img/products/component/leoni.jpg" alt="" width="">
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header bg-dark py-4 rounded-0">
+            <h4 class="text-white m-0">Ruhunu Food | 1200kWp <span class="fen-yello">Pallekele</span></h4>
+          </div>
+          <div class="card-body p-0">
+            <img src="assets/img/solutions/client2.png" alt="" width="100%">
+            </div>
+        </div>
+      </div>
+  </section> -->
+
+  
+ 
+  <div w3-include-html="include/footer.html"></div>
+
+    <!-- <section class="fullvh"></section> -->
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="assets/bootstrap-4.6.0-dist/jQuery/jQuery-3.5.1.slim.min.js"></script>
+    <script src="assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- Scroll Animation -->
+    <script src="assets/css/animate/aos.js"></script>
+    <!-- Include -->
+    <script src="assets/js/w3include.js"></script>
+
+    <script>
+        AOS.init();
+        includeHTML();
+    </script>
+</body>
+</html>

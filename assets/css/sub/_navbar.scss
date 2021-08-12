@@ -78,6 +78,7 @@ $nav-active: #006008;
 
   #navbarContent {
     .navbar-nav {
+      font-size: 14px;
       .nav-item {
         a.nav-link {
           text-decoration: none;
@@ -148,7 +149,7 @@ $nav-active: #006008;
 
               //line-height: calc(70px - 5px);
               &:hover {
-                color: $nav-active;
+                color: yellow;
               }
 
               h6 {

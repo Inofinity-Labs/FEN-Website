@@ -119,6 +119,10 @@ html a {
   width: 270px;
 }
 
+.navbar #navbarContent .navbar-nav {
+  font-size: 14px;
+}
+
 .navbar #navbarContent .navbar-nav .nav-item a.nav-link {
   text-decoration: none;
   text-transform: uppercase;
@@ -185,7 +189,7 @@ html a {
 }
 
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link:hover {
-  color: #006008;
+  color: yellow;
 }
 
 .navbar #navbarContent .navbar-nav .megamenu .sub-nav li.sub-menu .sub-link h6 {
@@ -515,19 +519,15 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   top: 0;
-  text-align: center;
   width: 100%;
   height: 40vh;
 }
 
 .hero-section .hero-heading h1 {
   color: #fff;
-  text-transform: uppercase;
+  font-family: "proxima-nova-400", sans-serif;
 }
 
 .about-image {
@@ -546,8 +546,8 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 
 .solution-image {
   height: 40vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../img/bg/solution-40.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3)), url(../img/bg/solution-40.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../img/bg/solu-40.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/bg/solu-40.jpg);
   background-size: cover;
   background-size: cover;
 }
@@ -1182,6 +1182,121 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
 }
 
 /* ------------ END accordion ------------*/
+.section-brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: 1s all ease;
+          transform: 1s all ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-brands {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.section-brands img {
+  width: 150px;
+  margin: 2em;
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+}
+
+.section-brands img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .section-brands img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-brands img {
+    width: 100px;
+  }
+}
+
+.colored-bg {
+  background-color: #fbfbfb;
+}
+
+.product-border {
+  border: 10px solid white;
+}
+
+.product-items-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 400px;
+}
+
+.product-items-center p {
+  font-size: 16px;
+}
+
+.product-bullets {
+  list-style: none;
+  padding: 1.1em;
+}
+
+.product-bullets li {
+  padding: 0.5em;
+  list-style-image: url(../img/svg-ico/check-outer.svg);
+  /*&:before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+        background-image: url(../img/svg-ico/check-outer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right:0.5em;   
+        margin-bottom: -5px;
+      }*/
+}
+
+.product-bullets li p,
+.product-bullets li h5 {
+  font-size: 16px;
+  display: inline;
+  color: #444444;
+}
+
+.product-image {
+  padding-top: 2em;
+}
+
+.cardComponent {
+  background-color: white;
+  min-height: 150px;
+}
+
 .shield img {
   margin: 20px;
 }
@@ -1313,5 +1428,13 @@ footer .footer-copyright-text a:hover, .footer-section .footer-copyright-text a:
   background-size: cover;
   height: 100vh;
   width: 100%;
+}
+
+.sub-active h6 {
+  color: #fabe11 !important;
+}
+
+.sub-link h6:hover {
+  color: #fabe11 !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@ html {
 @import "sub/about";
 @import "sub/contact";
 @import "sub/project";
+@import "sub/product";
 @import "sub/solution";
 
 //utility
@@ -128,4 +129,17 @@ html {
   background-size: cover;
   height: 100vh;
   width: 100%;
+}
+.sub-active {
+  h6 {
+    color: $fen-yellow !important;
+  }
+}
+
+.sub-link {
+  h6 {
+    &:hover {
+      color: $fen-yellow !important;
+    }
+  }
 }
